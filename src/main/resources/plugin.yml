@@ -3,6 +3,7 @@ version: ${project.version}
 description: Queues player when the server is full
 author: _BLU https://github.com/0blu
 main: wtf.blu.simpleQueue.SimpleQueuePlugin
+api-version: 1.19 # Or whatever version you are using!
 
 commands:
   sqversion:

@@ -25,7 +25,7 @@ jobs:
     - name: Upload build artifact
       uses: actions/upload-artifact@v4
       with:
-        name: my-java-app
+        name: SimpleQueue
         path: target/*.jar  # Adjust if necessary
 
     # Optional: Uploads the full dependency graph to GitHub

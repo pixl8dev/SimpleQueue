@@ -1,10 +1,15 @@
 reservedSlots: 1
 allowPrioritizedPlayersViaConfig: true
 mustReconnectWithinSec: 120
-kickMessageQueued: |2-
 
+discordWebhook:
+  enabled: false
+  webhookUrl: ""
+  message: ":hourglass: **%player%** has joined the queue (Position: %position%/%total%, Estimated wait: %estimate% min)"
+kickMessageQueued: |2-
   &cThe server is currently full!&r
 
   You are in the queue.
-  Position &a%d/%d&r.
-  &7Please reconnect within the next &6%d sec&7 to keep your position.&r
+  Position &a%position%/%total%&r.
+  &7Estimated wait time: &a%wait% mins&r
+  &7Please reconnect within the next &6%reconnect% sec&7 to keep your position.&r
